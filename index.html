@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amada</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h1 id="titulo">AMADA</h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            </div>
+            <br> <br> <br>
+        <div class="container">
+            <section id="filmInfo">
+                <h2 id="subtitulo">Sobre el corto</h2>
+                <br>
+                <p>“Amada” es una carta de amor a la inocencia de la infancia. La historia gira en torno a Aimeé, una niña de ocho años que adquiere poderes para ver por ella misma mientras que su mamá lucha con su salud mental.  Ante la crisis, la abuela de Aimeé, Olga, se hace presente buscando apoyarlas. En lo que parece ser de un día para otro, la mamá de Aimeé fallece. Aimeé intenta revivirla con sus poderes, pero falla, Olga la abraza conteniéndola y Aimeé se da cuenta de que sus poderes nunca habían sido ella, sino que su abuela estuvo ahí cuidándola en sus momentos más difíciles.</p>
+            </section>
+            <section id="fundraising">
+                <h2 id="subtitulo">Meta de recaudación</h2>
+                <br>
+                <p>Nuestra meta es obtener el financiamiento necesario para cubrir todos los costos relacionados con la producción de nuestro proyecto. Esto incluye la adquisición de equipo de alta calidad, el pago de tarifas por el uso de locaciones adecuadas para nuestras grabaciones, así como los gastos asociados con la post-producción, que garantizarán la calidad final del producto. Tu contribución nos permitirá llevar a cabo este proyecto de manera efectiva y garantizar su éxito. ¡Gracias por apoyarnos en esta importante iniciativa!.
+                </p>
+                <br>
+                <br> <br> <br><br> <br>
+                <center>
+                <p id="porcentaje">% </p>
+                </center>
+                <br><br><br>
+                <p>¡Únete para alcanzar nuestra meta de $25 mil! Tu apoyo dará vida a nuestro proyecto. ¡Gracias por contribuir!</p>
+                <br><br><br>
+                <div id="progressBar">
+                <div id="progress">
+                </div>
+                </div>
+                <br>
+                <br> <br>
+               
+                <center>
+                  <button id="openFormBtn" class="contribute-btn">Contribuye Ahora</button>
+              </center>
+          
+              <div id="modal" class="modal">
+                  <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h2>Formulario de Contribución</h2>
+                      <br>
+                      <form id="contribucionForm">
+                          <!-- Contenido del formulario aquí -->
+                          <label for="instrucciones">Instrucciones de pago:</label>
+                          <ol>
+                              <li>Transferir a cuenta CLABE: 147152023000239504</li>
+                              <li>Banco: BANKAOOL</li>
+                              <li>Empresa: OFFICE KIT SA DE CV</li>
+                              <li>Concepto de pago: AMADACORTO</li>
+                              <li>Mandar el comprobante de pago.
+                                <br>
+                                Para enviar el comprobante por email, haz click aquí: <a href="mailto:amadacorometraje@gmail.com?subject=AMADA%20CONTRIBUCIÓN-TU%20NOMBRE%20Y%20APELLIDO&body=Adjunto%20mi%20comprobante%20de%20pago%20y%20deseo%20que%20el%20nombre%20que%20aparezca%20en%20los%20créditos%20sea%20TU_NOMBRE_DESEADO.">Enviar comprobante por Email</a>
+
+                                <br> 
+                                Para enviar el comprobante por WhatsApp, haz click aquí: <a href="https://wa.me/5534447120?text=Hola,%20envio%20mi%20comprobante%20de%20pago%20y%20deseo%20que%20el%20nombre%20que%20aparezca%20en%20los%20créditos%20sea%20TU_NOMBRE_DESEADO.">Enviar comprobante por WhatsApp</a></li> </ol>
+                                <br>
+                                <p>¡YA ERES PARTE DEL PROYECTO! 
+                                  ESPERA TUS CRÉDITOS EN EL CORTO Y TU INVITACIÓN A LA PROYECCIÓN DEL ESTRENO. </p>
+<br><br>
+                        <center> <input type="submit" value="Seguir conociendo Amada" id="botonformulario"> <button id="whatsappBtn">Tengo una duda</button> </center> 
+
+                      </form>
+                  </div>
+              </div>
+ </section>
+        </div>
+        <br> <br> <br><br> <br>
+
+   <center><h2 id="subtitulo">Conoce al Crew</h2></center>
+        <div class="crew">
+
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <span class="stars"></span>
+                  <h3 class="Jessica">Jessica Urrea</h3>
+                  <br>
+                  <p class="Jessica">Apasionada del cine y la música, ha dirigido cortometrajes destacados como "Isaías 1:16" (2023), "Ness" (2020), "Nubes" (2023) y "Resbaladilla" (2023). Su versatilidad artística se refleja desde la infancia, explorando música, escritura y teatro. Su liderazgo y dedicación la hacen idónea para dirigir proyectos.</p>
+                </div>
+              </div>
+              <div class="face face2">
+                <h3>Directora y Guionista</h3>
+              </div>
+            </div>
+          
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <span class="stars"></span>
+                  <h3 class="Emilio">Emilio Villaseñor</h3>
+                  <br>
+                  <p class="Emilio">Estudiante de cine y televisión con experiencia en dirección y producción de cortometrajes como "Efecto Armonía" y "Resbaladilla". En su rol de producción, busca soluciones creativas respaldadas por conocimiento empírico, siempre priorizando el éxito del proyecto.</p>
+                </div>
+              </div>
+              <div class="face face2">
+                <h3>Producción</h3>
+              </div>
+            </div>
+          
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <span class="stars"></span>
+                  <h3 class="Adrian">Adrián Salazar</h3>
+                  <br>
+                  <p class="Adrian">Estudiante de cine en CENTRO. Ha dirigido "Candela" (2022) y "Roomtone" (2023), además de participar en la cinematografía y edición de proyectos como "Wendolyne" (2022) y "Moana" (2023). Reconoce la importancia del guion, la audiovisión y el montaje en el proceso cinematográfico.</p>
+                </div>
+              </div>
+              <div class="face face2">
+                <h3>Director de Fotografía</h3>
+              </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h3 class="Fernanda">Fernanda Monroy</h3>
+                    <br>
+                    <p class="Fernanda">Especializada en diseño de producción y arte, ha dejado su huella en cortometrajes como "Bahava Tanha", "Limós", "ÑEÑE" y "La insoportable levedad de un pez". Busca dar vida y significado a los espacios, transformándolos con nueva perspectiva.</p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h3>Diseño de Producción</h3>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h3 class="Marcia">Marcia Denegri</h3>
+                    <br>
+                    <p class="Marcia">Estudiante de cine y televisión con enfoque en dirección. Ha dirigido y asistido en cortometrajes como "I" (2022), "Sol Sostenido" (2023) y "TELAS" (2023), además de ser directora creativa en campañas de moda para marcas como 3Liebres y The Love Program.</p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h3>Asistente de Dirección</h3>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h3 class="Ivan">Ivan Mora</h3>
+                    <br>
+                    <p class="Ivan">Especializado en iluminación de escenas, aporta su expertise en set para apoyar a fotografía y dirección. Su habilidad para revisar y manipular material capturado, jugando con el color, contribuye a lograr el tono deseado en una escena.</p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h3>Corrección de Color</h3>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h3 class="Victor">Victor Correa</h3>
+                    <br>
+                    <p class="Victor">Ha dirigido cortometrajes como "Agonizing Blood" (2020), "Interior 402" (2022), "Bermellón" (2023) y "Delirios Nocturnos" (2023). Además, ha trabajado como cinefotógrafo en varios proyectos, incluyendo cortometrajes y videoclips.
+                    </p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h3>Edición y Montaje</h3>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h3 class="Mario">Mario Serna</h3>
+                    <br>
+                    <p class="Mario">Estudiante de cine y televisión con especialidad en diseño sonoro. Ha participado en cortometrajes como "Corvato", "Lo bello", "Ñeñe" e "Isaías 1-16", combinando sonidos ambientales y música en proyectos independientes.
+                    </p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h3>Diseño Sonoro</h3>
+                </div>
+              </div>
+
+          </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Amada. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+   

@@ -1,0 +1,359 @@
+@font-face {
+  font-family: 'DK Cool Crayon';
+  src: url('typo/DKCoolCrayon.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DkNouveauCrayonRegular';
+  src: url('typo/DkNouveauCrayonRegular-R2j6.otf') format('opentype');
+}
+
+/* Resetting default margin and padding */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "DK Cool Crayon";
+}
+
+p{
+font-family:"DkNouveauCrayonRegular" ;
+font-size: 1.3em;
+}
+
+/* Basic styles for header */
+header {
+background-color: #612E47;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+}
+
+/* Styling main content */
+main {
+padding: 20px 0;
+text-align: justify;
+}
+
+#titulo{
+margin-top: 20px;
+margin-bottom: 20px;
+font-size: 3em;
+}
+#subtitulo{
+font-size: 2em;
+}
+
+
+
+#porcentaje{
+font-family:'DK Cool Crayon';
+font-size: 3.5em;
+}
+
+
+/* Container */
+.container {
+max-width: 800px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+/* Styling sections */
+section {
+margin-bottom: 30px;
+}
+
+/* Styling progress bar */
+#progressBar {
+background-color: #ccc;
+height: 20px;
+border-radius: 10px;
+overflow: hidden;
+}
+
+#progress {
+background-color: #A0698C;
+height: 100%;
+width: 50%; /* Change this value dynamically using JavaScript */
+}
+
+/* Styling footer */
+footer {
+background-color: #612E47;
+color: #fff;
+text-align: center;
+padding: 10px 0;
+}
+
+/* Button */
+.contribute-btn {
+background-color: #A0698C;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 1.3em;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.contribute-btn:hover {
+background-color: #612E47;
+}
+
+
+/* CREW */
+  .crew {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 35px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+
+    .card {
+      position: relative;
+      width: 250px;
+      height: 325px;
+      margin: 0 auto;
+      background: #612E47;
+      border-radius: 15px;
+      box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+    
+      .face {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        &.face1 {
+          box-sizing: border-box;
+          padding: 10px;
+          align-items: flex-start;
+        
+          h3 {
+            margin-top: 15px;
+            padding: 0;
+          }
+
+          .Jessica {
+            background-color: #fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .Emilio{
+            background-color:#fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .Adrian {
+            background-color: #fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .Fernanda {
+            background-color: #fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .Marcia {
+            background-color: #fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .Ivan {
+            background-color: #fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .Victor {
+            background-color: #fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          .Mario {
+            background-color: #fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+
+        &.face2 {
+          transition: 0.5s;
+
+          h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 2em;
+            color: #fff;
+            transition: 0.5s;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .card:hover .face.face2 {
+      height: 60px;
+      background-color: #A0698C;
+
+      h3 {
+        margin-left: 25px;
+        font-size: 1em;
+      }
+    }
+
+    .card:nth-child(1) .face.face2 {
+      background-image: url(img/jessie.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+    }
+
+    .card:nth-child(2) .face.face2 {
+      background-image: url(img/villa.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+    }
+
+    .card:nth-child(3) .face.face2 {
+      background-image: url(img/adrian.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+    }
+  
+    .card:nth-child(4) .face.face2 {
+        background-image: url(img/monroy.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+      }
+
+      .card:nth-child(5) .face.face2 {
+        background-image: url(img/marcia.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+      }
+    
+      .card:nth-child(6) .face.face2 {
+        background-image: url(img/ivan.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+      }
+
+      .card:nth-child(7) .face.face2 {
+        background-image: url(img/victor.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+      }
+
+      .card:nth-child(8) .face.face2 {
+        background-image: url(img/mario.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+      }
+  
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 9999; /* Ajusta el z-index a un valor alto */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    
+    .modal-content {
+   
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 50px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+    
+    .modal-content h2{
+    font-family: "DK Cool Crayon";
+    font-family: 1em;
+    }
+
+    .modal-content li, a, label, p{
+    font-family: 'DkNouveauCrayonRegular';
+    font-size: 1.3em;
+    }
+
+    .modal-content label{
+    font-size:1.8em;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .no-scroll {
+      overflow: hidden;
+  }
+
+  #botonformulario{
+  background-color: #A0698C;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+
+  #botonformulario:hover{
+  background-color: #612E47;
+  }
+
+  #whatsappBtn{
+    background-color: #A0698C;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #whatsappBtn:hover{
+    background-color: #612E47;  
+  }
